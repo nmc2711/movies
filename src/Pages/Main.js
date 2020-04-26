@@ -1,7 +1,13 @@
 import React from "react";
-
+import Header from "../commons/Layout/header";
+import Layout from "../commons/Layout/index";
 function main() {
-  return <div>메인</div>;
+  return (
+    <Layout>
+      <Header />
+      메인
+    </Layout>
+  );
 }
 
 export default main;
