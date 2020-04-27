@@ -1,16 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-const FooterWrap = styled.footer`
-  position: relative;
-  min-width: 1100px;
-  width: 100%;
-  height: 200px;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8fa;
-`
-
 const Footer = () => (
   <FooterWrap id="footer">
     <div class="footer-top">
@@ -132,3 +122,78 @@ const Footer = () => (
 )
 
 export default Footer
+
+const FooterWrap = styled.footer`
+  position: relative;
+  min-width: 1100px;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8fa;
+
+  .footer-top {
+    overflow: hidden;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    .fnb {
+      float: left;
+
+      li {
+        float: left;
+        margin-left: 14px;
+        a {
+          display: block;
+          color: #666;
+          line-height: 30px;
+          font-size: 0.8667em;
+        }
+      }
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .inner-wrap {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    overflow: hidden;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+
+    .ci {
+      overflow: hidden;
+      display: block;
+      float: left;
+      width: 150px;
+      height: 50px;
+      margin: 0 20px 0 0;
+      padding: 0;
+      text-indent: -9999px;
+      background: url(https://img.megabox.co.kr/static/pc/images/common/ci/logo-opacity.png)
+        no-repeat center;
+    }
+
+    .footer-info {
+      float: left;
+      font-size: 0.8667em;
+      letter-spacing: 0;
+
+      p {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .footer-sns {
+      float: right;
+    }
+  }
+`

@@ -1,11 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
+import Header from "./header"
+import Footer from "./footer"
 
-const Layout = ({ children }) => <Wrapper>{children}</Wrapper>;
+const Layout = ({ children }) => (
+  <Wrapper>
+    <Header />
+    {children}
+    <Footer />
+  </Wrapper>
+)
 
 //styled
 const Wrapper = styled.div`
-  padding-top: 60px; /* 헤더 높이 */
-`;
+  padding-top: 91px; /* 헤더 높이 */
+`
 
-export default Layout;
+export default Layout
