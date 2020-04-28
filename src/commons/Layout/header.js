@@ -65,7 +65,7 @@ const Wrapper = styled.div`
           margin-right: 90px;
         }
         a:last-child {
-          margin-right: 0;
+          margin-right: 0.0000001px;
         }
       }
     }
