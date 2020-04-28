@@ -46,14 +46,6 @@ const Footer = () => (
             </a>
           </li>
         </ul>
-
-        <a
-          href="#layer_looking_theater"
-          class="btn-looking-theater"
-          title="극장찾기"
-        >
-          <i class="iconset ico-footer-search"></i> 극장찾기
-        </a>
       </div>
     </div>
 
@@ -75,44 +67,6 @@ const Footer = () => (
           <p class="copy">
             COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
           </p>
-        </div>
-
-        <div class="footer-sns">
-          <a
-            href="https://twitter.com/megaboxon"
-            target="_blank"
-            title="MEGABOX 트위터 페이지로 이동"
-          >
-            <i class="iconset ico-twitter">트위터</i>
-          </a>
-          <a
-            href="https://www.facebook.com/megaboxon"
-            target="_blank"
-            title="MEGABOX 페이스북 페이지로 이동"
-          >
-            <i class="iconset ico-facebook">페이스북</i>
-          </a>
-          <a
-            href="http://instagram.com/megaboxon"
-            target="_blank"
-            title="MEGABOX 인스타그램 페이지로 이동"
-          >
-            <i class="iconset ico-instagram">인스타그램</i>
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.megabox.mop"
-            target="_blank"
-            title="MEGABOX 구글플레이 페이지로 이동"
-          >
-            <i class="iconset ico-googleplay">구글플레이</i>
-          </a>
-          <a
-            href="https://itunes.apple.com/kr/app/megabox/id894443858?l=ko&amp;ls=1&amp;mt=8"
-            target="_blank"
-            title="MEGABOX 앱스토어 페이지로 이동"
-          >
-            <i class="iconset ico-appstore">앱스토어</i>
-          </a>
         </div>
       </div>
     </div>
@@ -183,8 +137,18 @@ const FooterWrap = styled.footer`
 
     .footer-info {
       float: left;
+      width: calc(100% - 170px);
       font-size: 0.8667em;
       letter-spacing: 0;
+
+      * {
+        line-height: 20px;
+      }
+
+      address {
+        display: inline-block;
+        vertical-align: top;
+      }
 
       p {
         display: inline-block;
